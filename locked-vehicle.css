@@ -1,0 +1,19 @@
+.vehicle-selector.locked {
+  background: #eef8f5;
+  color: var(--green);
+}
+
+.vehicle-selector.locked select {
+  border-color: #9bcdbf;
+  background: #f7fcfa;
+  color: var(--navy);
+  font-weight: 850;
+  opacity: 1;
+}
+
+.vehicle-selector.locked span::before {
+  content: "🔒 ";
+  font-size: 11px;
+}
+
+.vehicle-selector[hidden] { display: none; }

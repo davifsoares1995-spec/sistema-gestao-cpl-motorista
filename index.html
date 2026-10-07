@@ -7,6 +7,7 @@
   <meta name="robots" content="noindex,nofollow">
   <title>Portal do Motorista — CPL</title>
   <link rel="stylesheet" href="motorista.css">
+  <link rel="stylesheet" href="locked-vehicle.css?v=2">
   <style>.reading-summary.single{grid-template-columns:1fr}</style>
 </head>
 <body>
@@ -18,7 +19,7 @@
     </header>
 
     <section class="welcome">
-      <div><small>REGISTRO RÁPIDO</small><h1 id="pageReadingTitle">Atualize a leitura</h1><p>Selecione o veículo ou máquina e informe o painel.</p></div>
+      <div><small>REGISTRO RÁPIDO</small><h1 id="pageReadingTitle">Atualize a leitura</h1><p id="welcomeHint">Selecione o veículo ou máquina e informe o painel.</p></div>
     </section>
 
     <section class="vehicle-card">
@@ -26,7 +27,7 @@
         <div><small id="identifierLabel">PLACA OU IDENTIFICAÇÃO</small><strong id="vehicleIdentifier">—</strong></div>
         <div class="qr-symbol" aria-hidden="true"></div>
       </div>
-      <label class="vehicle-selector">Selecionar o veículo ou máquina
+      <label id="vehicleSelector" class="vehicle-selector"><span id="selectorCaption">Selecionar o veículo ou máquina</span>
         <select id="vehicleSelect" aria-label="Selecionar o veículo ou máquina"></select>
       </label>
       <div class="reading-summary single">
@@ -64,6 +65,6 @@
   </dialog>
 
   <script src="fleet-data.js"></script>
-  <script src="motorista.js"></script>
+  <script src="motorista.js?v=2"></script>
 </body>
 </html>
